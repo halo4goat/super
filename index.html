@@ -1267,7 +1267,7 @@
 
         // Password gate. This is a client-side access gate, not strong security.
         (function () {
-            const PASSWORD_HASH = '56dd3c1a83d4b388e6c43b8f1ce465e747edacc0c4faf8c4525be19bc0adc56d';
+            const PASSWORD_HASH = '51613799d8af080ea4606b16539b17cbdf337623e1a7364dffecd5abebd1b696';
             const gate = document.getElementById('passwordGate');
             const input = document.getElementById('sitePassword');
             const button = document.getElementById('passwordSubmit');
@@ -1294,7 +1294,7 @@
                 try {
                     // The password is intentionally simple for this fake/hidden site.
                     // Compare directly so it also works when opened outside HTTPS.
-                    const correct = value === 'tungtung';
+                    const correct = value === 'imsotuff';
                     if (correct) {
                         document.body.classList.remove('password-locked', 'site-locked');
                         gate.remove();
