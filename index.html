@@ -524,7 +524,7 @@
 <body>
     <div id="customBackgroundLayer" aria-hidden="true"></div>
     <div id="passwordGate" aria-label="Password required">
-        <h1>Enter Password</h1>
+        <h1>12 ◇ 8 = ?</h1>
         <div class="password-wrap">
             <input id="sitePassword" type="password" placeholder="Password" autocomplete="off" autofocus>
             <button id="passwordSubmit" type="button">Enter</button>
@@ -1267,7 +1267,7 @@
 
         // Password gate. This is a client-side access gate, not strong security.
         (function () {
-            const PASSWORD_HASH = '51613799d8af080ea4606b16539b17cbdf337623e1a7364dffecd5abebd1b696';
+            const PASSWORD_HASH = '6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443';
             const gate = document.getElementById('passwordGate');
             const input = document.getElementById('sitePassword');
             const button = document.getElementById('passwordSubmit');
@@ -1294,7 +1294,7 @@
                 try {
                     // The password is intentionally simple for this fake/hidden site.
                     // Compare directly so it also works when opened outside HTTPS.
-                    const correct = value === 'imsotuff';
+                    const correct = value === '21';
                     if (correct) {
                         document.body.classList.remove('password-locked', 'site-locked');
                         gate.remove();
